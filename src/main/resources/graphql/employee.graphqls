@@ -1,6 +1,5 @@
 type Query {
     employees: [Employee]
-    employeeById(id: ID!): Employee
 }
 
 type Employee {
@@ -24,7 +23,5 @@ input CreateEmployeeInput {
 
 type Mutation {
     newEmployee(createEmployeeInput: CreateEmployeeInput!): Employee!
-    deleteEmployee(id: ID!): Boolean
-    updateEmployee(id: ID!, createEmployeeInput: CreateEmployeeInput!): Employee!
 }
 
